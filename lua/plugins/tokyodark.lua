@@ -1,23 +1,23 @@
 local default_config = {
-    transparent_background = true, -- set background to transparent
-    gamma = 1.00, -- adjust the brightness of the theme
+    transparent_background = true,
+    gamma = 1.00,
     styles = {
-        comments = { italic = true }, -- style for comments
-        keywords = { italic = true }, -- style for keywords
-        identifiers = { italic = true }, -- style for identifiers
-        functions = {}, -- style for functions
-        variables = {}, -- style for variables
+        comments = { italic = true },
+        keywords = { italic = true },
+        identifiers = { italic = true },
+        functions = {},
+        variables = {},
     },
-    custom_highlights = {}, -- extend highlights
-    custom_palette = {}, -- extend palette
-    terminal_colors = true, -- enable terminal colors
+    custom_highlights = {},
+    custom_palette = {},
+    terminal_colors = true,
 }
 
 return {
     "tiagovla/tokyodark.nvim",
     opts = default_config,
     config = function(_, opts)
-        require("tokyodark").setup(opts) -- calling setup is optional
+        require("tokyodark").setup(opts)
         vim.cmd([[colorscheme tokyodark]])
     end,
 }

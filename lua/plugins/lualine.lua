@@ -4,8 +4,8 @@ return {
   config = function()
     require("lualine").setup({
       options = {
-        theme = "powerline_dark", -- pairs nicely with TokyoDark
-        globalstatus = true, -- single statusline across splits
+        theme = "powerline_dark",
+        globalstatus = true,
         icons_enabled = true,
         section_separators = { "", "" },
         component_separators = "|",
@@ -13,7 +13,7 @@ return {
       sections = {
         lualine_a = { { "mode", icon = "" } },
         lualine_b = { "branch", "diff" },
-        lualine_c = { { "filename", path = 1 } }, -- show relative path
+        lualine_c = { { "filename", path = 1 } },
         lualine_x = { "diagnostics", "encoding", "filetype" },
         lualine_y = { "progress" },
         lualine_z = { "location" },
