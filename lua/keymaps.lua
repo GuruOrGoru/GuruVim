@@ -11,6 +11,8 @@ keymap.set("v", "p", "\"+p", opts)
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", opts)
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", opts)
 
+keymap.set("v", "<Tab>", ">gv", { desc = "Indent selection" })
+keymap.set("v", "<S-Tab>", "<gv", { desc = "Unindent selection" })
 keymap.set("n", "<leader>h", ":nohlsearch<CR>", opts)
 
 keymap.set("n", "<C-h>", "<C-w>h", opts)
