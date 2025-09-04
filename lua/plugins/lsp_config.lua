@@ -12,6 +12,9 @@ return {
 				ensure_installed = { "lua_ls", "gopls" },
 			})
 		end,
+		opts = {
+			auto_install = true,
+		},
 	},
 	{
 		"neovim/nvim-lspconfig",
