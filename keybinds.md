@@ -2,6 +2,26 @@
 
 ## General
 - `<leader>nn`: Toggle relative line numbers
+- `jk`: Exit insert mode
+- `<C-h>`: Move to left window
+- `<C-j>`: Move to lower window
+- `<C-k>`: Move to upper window
+- `<C-l>`: Move to right window
+- `<leader>td`: Toggle diagnostics
+
+## LSP
+- `K`: Hover
+- `[d`: Previous diagnostic
+- `]d`: Next diagnostic
+- `gd`: Go to definition
+- `gi`: Go to implementation
+- `<leader>ca`: Code action
+- `<leader>f`: Format
+
+## Completion (Copilot)
+- `<leader>cp`: Accept copilot suggestion
+- `<leader>cd`: Disable copilot
+- `<leader>ce`: Enable copilot
 
 ## Oil (File Explorer)
 - `<leader>e`: Open Oil file explorer
@@ -45,3 +65,9 @@
 ## Commentary (vim-commentary defaults)
 - `gcc`: Comment/uncomment line
 - `gc`: Comment/uncomment motion
+
+## Which-Key
+- `<leader>?`: Show buffer local keymaps
+
+## Vim-Be-Good
+- `<leader>bg`: Start Vim Be Good game
