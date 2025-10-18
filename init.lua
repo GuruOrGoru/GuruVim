@@ -49,3 +49,4 @@ require("lazy").setup({
   },
 })
 require("oil").setup()
+-- vim.cmd[[colorscheme tokyonight-night]]
