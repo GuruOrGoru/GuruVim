@@ -22,7 +22,7 @@ return {
 		opts = {},
 		config = function()
 			vim.lsp.config('gopls', {
-				root_dir = vim.fn.fnamemodify(debug.getinfo(1, 'S').source:sub(2), ':p:h'),
+				root_dir = require('lspconfig.util').root_pattern('go.mod', '.git'),
 			})
 			vim.lsp.config('lua_ls', {
 				root_dir = vim.fn.fnamemodify(debug.getinfo(1, 'S').source:sub(2), ':p:h'),
