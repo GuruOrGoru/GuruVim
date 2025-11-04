@@ -14,6 +14,9 @@ vim.keymap.set('n', 'C-h', '<C-w>h', { desc = 'Move to left window' })
 vim.keymap.set('n', 'C-j', '<C-w>j', { desc = 'Move to lower window' })
 vim.keymap.set('n', 'C-k', '<C-w>k', { desc = 'Move to upper window' })
 vim.keymap.set('n', 'C-l', '<C-w>l', { desc = 'Move to right window' })
+
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move selected text down' })
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selected text up' })
 local diagnostics_active = true
 vim.keymap.set("n", "<leader>td", function()
   diagnostics_active = not diagnostics_active
