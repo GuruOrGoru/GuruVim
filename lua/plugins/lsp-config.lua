@@ -13,7 +13,7 @@ return {
 			},
 			config = function()
 				require("mason-lspconfig").setup({
-					ensure_installed = { "lua_ls", "gopls", "gofumpt", "goimports", "golangci-lint", "stylua" },
+					ensure_installed = { "lua_ls", "gopls" },
 					automatic_enable = false,
 				})
 			end,
